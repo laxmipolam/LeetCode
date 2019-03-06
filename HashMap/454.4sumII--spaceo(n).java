@@ -2,6 +2,7 @@ class Solution {
     public int fourSumCount(int[] A, int[] B, int[] C, int[] D) {
         int tuples = 0;
         int len = A.length;
+        //Hash Set with Elements D
         Map<Integer,Integer> dhash = new HashMap<Integer, Integer>();
         for(int i = 0; i < len; i++){
             if(dhash.containsKey(D[i])){
